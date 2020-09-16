@@ -1,0 +1,11 @@
+mkdir hw1_unix
+mkdir hw1_unix_copy
+cp -r hw1_unix /Users/jhyeonpark/hw1_unix_copy
+cd hw1_unix_copy
+vim file1.txt
+cp -r file1.txt /Users/jhyeonpark/hw1_unix_copy/hw1_unix/file1_copy.txt
+cp -r file1.txt /Users/jhyeonpark/hw1_unix_copy/hw1_unix/file2_copy.txt
+cd ..
+ls -la
+cd hw1_unix
+ls -la
