@@ -8,12 +8,29 @@ int userFirst(void);
 
 
 char board[BOARD_SIZE][BOARD_SIZE];
-
+char computer;
+char user;
 
 int main(){
 	initBoard();
-	drawBoard();
-userFirst();
+
+  int choice;
+  choice = userFirst();
+  
+char computer  = 'O';;
+char user='X';
+
+if (choice==0){
+computer = 'X';
+user='O';
+
+}
+
+drawBoard();
+
+char winner = playGame();
+
+
   return(0);
 
 }
